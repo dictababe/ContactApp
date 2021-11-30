@@ -29,6 +29,7 @@ class ContactDetailView extends StatelessWidget {
           ),
           CircleAvatar(
             radius: 60,
+            backgroundImage: NetworkImage('https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') ,
             
           ),
           const SizedBox(
@@ -49,6 +50,7 @@ class ContactDetailView extends StatelessWidget {
               ),
           ),
           Container(
+            color: Colors.blueGrey.withOpacity(0.2),
             child: Column(children: [
               ListTile(
                 title: Text(
@@ -79,17 +81,75 @@ class ContactDetailView extends StatelessWidget {
                   ],
                 )
                 
-            
               ),
                ListTile(
                 title: Text(
                   'Group',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
                 ),
-                subtitle: Text('dude'),
+                subtitle: Text('montana'),
                              
             
               ),
+                Card(
+                  child: ListTile(
+                  title: Text(
+                    'Account Linked',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
+                  ),
+                  
+                               
+                            
+                              ),
+                ),
+                ListTile(
+                title: Text(
+                  'Telegram',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
+                ),
+                trailing: Row(mainAxisSize: MainAxisSize.min,children: 
+                [Image.asset('assets/telegram.jpg')],),
+                  
+                
+                             
+            
+              ),
+                            
+              
+  ListTile(
+                title: Text(
+                  'WhatsApp',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
+                ),
+                trailing: Row(mainAxisSize: MainAxisSize.min,children:
+                [
+                  Image.asset('assets/whtsapp.jpg'),
+
+                ]
+
+
+              
+                ),
+                             
+            
+              ),
+                // ignore: prefer_const_constructors
+
+                ListTile(
+                title: Text(
+                  'QR Code', 
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
+                ),
+                
+                             
+            
+              ),
+
+
+
+
+
+
 
             ],),
           )
